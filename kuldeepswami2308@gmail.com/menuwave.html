@@ -1,0 +1,235 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap" rel="stylesheet">
+        <title>Restaurant Menu</title>
+            <style>
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+
+ body
+  {
+    background-image: url('https://labdhpurohit.github.io/Menu_Example3/Untitled%20design%20(1).gif');
+    background-size: cover;
+    background-position: center;
+    background-color: #ffe76e;
+  }
+  
+  body {
+    font-family: 'Overpass', sans-serif;
+  }
+
+  .last_line
+  {
+    text-align: center;
+    color: #ffd498;
+  }
+  
+  /* Header Styles */
+  header {
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: rgba(255, 255, 255, 0.20);
+    box-shadow: 10px 10px 0px 0px #613400;
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    margin: 20px;
+    padding: 20px;
+    color: #291600;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 24px;
+  }
+  
+  /* Menu Styles */
+  .menu {
+    margin-left: 20px;
+    height: 750px;
+    margin-right: 20px;
+    padding: 20px;
+    overflow: auto;
+    border-radius: 10px;
+border: 1px solid #000;
+background: rgba(255, 255, 255, 0.20);
+box-shadow: 10px 10px 0px 0px #613400;
+backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+  }
+  
+  .category {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .category-name {
+    color: #291600;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .dishes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .dish {
+    border-radius: 10px;
+border: 1px solid #000;
+background: rgba(255, 255, 255, 0.20);
+box-shadow: 5px 5px 0px 0px #613400;
+backdrop-filter: blur(2.5px);
+    padding: 20px;
+    
+  }
+  
+  .dish-name {
+    color: #291600;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .dish-price {
+    color: #291600;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .dish-description {
+    color: #291600;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .menu {
+      padding: 10px;
+    }
+    
+    .dishes {
+      grid-template-columns: 1fr;
+    }
+    
+    .dish {
+      margin-bottom: 20px;
+    }
+  }
+
+  /* Menu_Card_Resizing */
+
+  @media screen and (max-height: 1000px){
+    .menu{
+        height: 800px;
+    }
+    body{
+        background-size: 100%;
+    }
+    
+  }
+
+  @media screen and (max-height: 950px){
+    .menu{
+        height: 750px;
+    }
+    body{
+        background-size: 150%;
+    }
+    
+  }
+
+  @media screen and (max-height: 900px){
+    .menu{
+        height: 700px;
+    }
+    body{
+        background-size: 200%;
+    }
+    
+  }
+
+  
+  @media screen and (max-height: 850px){
+    .menu{
+        height: 650px;
+    }
+    body{
+        background-size: 250%;
+    }
+    
+  }
+
+  @media screen and (max-height: 800px){
+    .menu{
+        height: 600px;
+    }
+    body{
+        background-size: 300%;
+    }
+    
+  }
+
+  @media screen and (max-height: 750px){
+    .menu{
+        height: 550px;
+    }
+    body{
+        background-size: 350%;
+    }
+    
+  }
+
+  @media screen and (max-height: 700px){
+    .menu{
+        height: 500px;
+    }
+    body{
+        background-size: 350%;
+    }
+    
+  }
+  
+  @media screen and (max-height: 650px){
+    .menu{
+        height: 450px;
+    }
+    body{
+        background-size: 350%;
+    }
+    
+  }
+
+  @media screen and (max-height: 600px){
+    .menu{
+        height: 400px;
+    }
+    body{
+        background-size: 350%;
+    }
+    
+  }
+
+    </style>
+    </head>
+    <body>
+        <div class="bg">
+            <header>
+                <h1 class="title">kuldeep's restro</h1>
+            </header>
+            <div class="menu">
+    <div class="category"><h2 class="category-name">Starters</h2><div class="dishes"><div class="dish"><h3 class="dish-name">french fries</h3><p class="dish-price">200/-</p><p class="dish-description">fsdfjlkdslkjf dslkf jsd jkflsdlfj lkjdfssd</p></div></div><div class="dishes"><div class="dish"><h3 class="dish-name">peri peri fries</h3><p class="dish-price">150/-</p><p class="dish-description">dsklfj dslkf jdslkfj dslkj </p></div></div></div><div class="category"><h2 class="category-name">Pizza</h2><div class="dishes"><div class="dish"><h3 class="dish-name">paneer tandori</h3><p class="dish-price">200/-</p><p class="dish-description">dslfdslkjf dklsj flsdjk  fljkds kjl</p></div></div></div>
+            </div>
+        </div>
+    </body>
+    </html>
+    
